@@ -1,7 +1,9 @@
 //IMPORTED PARTIALS
 @import 'components/reset'
 @import 'components/fonttaces'
+@import 'components/typestyles'
 @import 'components/navbar'
+@import 'components/jumbotron'
 //MASTER CONTROLS
 body
   height: 100vh
@@ -10,3 +12,27 @@ body
   font-family: 'Avenir Next', sans-serif
   background-color: #fff
   font-weight: 300
+
+//SUPERCLASSES//
+
+.content-wrapper
+  width: 1000px
+  margin: 0 auto
+//SUPER BUTTON
+.ctaBlueButton
+  height: 44px
+  width: auto
+  background-color: #449FD8
+  padding: 0px 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: rgba(255,255,255,0.95)
+  text-transform: uppercase
+  letter-spacing: .1em
+  margin: 10px 0
+  cursor: pointer
+  user-select: none
+  transition: all 200ms ease-in-out
+  &:hover
+    background-color: #1589ca
