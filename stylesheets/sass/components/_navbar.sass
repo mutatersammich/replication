@@ -6,11 +6,21 @@
     justify-content: space-around
     align-items: center
 
+
     li
       margin: 0 15px
-      color: #595959
-      font-weight: 4
-      font-size: .9em
+      font-weight: 400
+      font-size: .88em
+      padding-bottm: 1px
+      letter-spacing: .1em
+    a
+      text-decoration: none
+      color: #6A6A6A
+      &:hover
+        color: #01a1dd
+        fill: #01a1dd
+        
+
 
 
 
@@ -21,7 +31,7 @@
 
   display: flex
   justify-content: space-between
-  padding: 0px 50px
+  padding: 0px 35px
   box-sizing: border-box
   border-bottom: 1px solid #e5e5e5
 
@@ -33,13 +43,15 @@
 
 
 
+
     #navbarLogo
       height: 100%
       width: auto
       display: flex
       justify-content: space-between
       align-items: center
-      margin: 0 15px 0 30px
+      margin: 0px 15px
+
 
     +listSpace
 
@@ -48,4 +60,17 @@
     height: 100%
     width: auto
     display: flex
+
+
     +listSpace
+
+
+    a:first-child
+      color: #01a1dd
+
+    li:last-child
+      margin-right: 14px
+      margin-left: 8px
+
+    li:nth-child(2)
+      margin-right: 0px
