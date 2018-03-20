@@ -1,0 +1,150 @@
+
+//placeholders
+=listSpace
+  ul
+    display: flex
+    justify-content: space-around
+    align-items: center
+    box-sizing: border-box
+
+
+    li
+      margin: 0 15px
+      font-weight: 400
+      font-size: .88em
+      padding-bottm: 1px
+      letter-spacing: .1em
+      position: relative
+
+    a.left
+      text-decoration: none
+      color: #6A6A6A
+      height: 66px
+      box-sizing: border-box
+      display: flex
+      align-items: center
+      &:hover
+        color: #01a1dd
+        fill: #01a1dd
+        .navbarDD
+          display: block
+          cursor: default
+    a
+      text-decoration: none
+      color: #6A6A6A
+      height: 0px
+      box-sizing: border-box
+      display: flex
+      align-items: center
+      &:hover
+        color: #01a1dd
+        fill: #01a1dd
+    a.no-anchor
+      text-decoration: none
+      color: #6A6A6A
+      height: 0px
+      box-sizing: border-box
+      &:hover
+        color: #01a1dd
+        fill: #01a1dd
+
+
+
+
+
+#navbar
+  height: 66px
+  width: 100vw
+
+
+  display: flex
+  justify-content: space-between
+  padding: 0px 35px
+  box-sizing: border-box
+  border-bottom: 1px solid #e5e5e5
+
+  #navbarLeft
+    height: 100%
+    width: 565px
+    display: flex
+    justify-content: space-between
+
+
+
+
+
+
+    #navbarLogo
+      height: 100%
+      width: auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0px 15px
+
+
+    +listSpace
+
+
+  #navbarRight
+    height: 100%
+    width: auto
+    display: flex
+
+
+    +listSpace
+
+
+    a:first-child
+      color: #01a1dd
+
+
+
+    li:last-child
+      margin-right: 14px
+      margin-left: 8px
+
+    li:nth-child(2)
+      margin-right: 0px
+
+////////////////////////////////////////////////////////////////////////////////
+//                          DROPDOWN CODE                                     //
+.navbarDD
+  height: auto
+  width: auto
+  background-color: #fff
+  position: absolute
+  top: 65px
+  display: none
+  border-right: 1px solid #e5e5e5
+  border-left: 1px solid #e5e5e5
+  border-bottom: 1px solid #e5e5e5
+  li
+    font-size: 1.1em
+    height: 30px
+    padding: 10px 15px
+    color: #6A6A6A
+    &:hover
+      color: #01a1dd
+  hr
+    border: 1px solid #e5e5e5
+    border-top: none
+////////////////////////////////////////////////////////////////////////////////
+//                              JUMBOTRON:                                    //
+.jumbo-section
+
+  height: 83vh
+  width: 100vw
+
+  background:
+    image: url('https://blue-bottle-cms.global.ssl.fastly.net/hbhhv9rz9/image/upload/f_auto/v1521063681/ab0e0t1qaedup1wpapax.jpg')
+    size: cover
+    repeat: no-repeat
+////////////////////////////////////////////////////////////////////////////////
+//                            JUMBOSTATEMENT:                                 //
+.jumbotronStatement
+  height: 500px
+  width: 200px
+  position: absolute
+
+  
